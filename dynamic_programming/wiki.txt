@@ -1,0 +1,299 @@
+## pgRouting's GSoC Ideas for 2021
+
+This page is always work in progress, because we admit new ideas!
+
+Table of Contents
+=================
+
+* [pgRouting's GSoC Mentors:](#pgroutings-gsoc-mentors)
+* [Introduction](#introduction)
+  * [Important](#important)
+* [pgRouting's GSoC Ideas for 2021](#pgroutings-gsoc-ideas-for-2021)
+* [Completed in prior years](#completed-in-prior-years)
+* [How to get started](#how-to-get-started)
+* [pgRouting application requirements](#pgrouting-application-requirements)
+* [Details of Ideas](#details-of-ideas)
+
+
+### pgRouting's GSoC Mentors:
+
+Our mentors can mentor any project.
+
+| name | 2021 Availability | Mentor Years | Other
+|-----|----|-----|-----| 
+[Stephen Woodbridge](https://github.com/woodbri)| | 2009~2014 | Retired Ex-PSC
+[Daniel Kastl](https://github.com/dkastl) | YES | 2009~2020 | PSC
+[Vicky Vergara](https://github.com/cvvergara)| YES | 2015~2020 | PSC
+[Rohith Reddy](https://github.com/iamrohith94)|  | 2017~2018 | GSoC-student 2016 + PSC
+[Cayetano Benavent](https://github.com/cayetanobv)|  | 2018~2020 | PSC
+[Vidhan Jain](https://github.com/vidhan13j07)|  | 2018 | GSoC-student 2017
+[Sourabh Garg](https://github.com/codesg)| | 2019 | GSoC-student 2018
+[Aasheesh Tiwari](https://github.com/aasheesht)| | 2020 | GSoC-student 2018
+
+# Introduction
+
+So you are interested in becoming a Google Summer of Code student, This is great! but what should you do to improve your chances of being selected? We recommend reading
+
+* [OSGeo's GSoC Recommendations for Students](https://wiki.osgeo.org/wiki/Google_Summer_of_Code_Recommendations_for_Students) and
+* [pgRouting application requirements](#pgrouting-application-requirements) to start with.
+
+**Remember to be proactive**
+
+* Pick a bug or ask for one and work on fixing it so you learn the product and development environment
+* Discuss your ideas on the [pgrouting-dev list](http://lists.osgeo.org/mailman/listinfo/pgrouting-dev)
+* The best GSoC idea is **YOUR idea**! something that you are really interested in developing.
+
+We like contributions on the pgRouting's products:
+
+* osm2pgrouting (C++ & SQL)
+* pgRouting (C & C++ & SQL)
+* pgroutingLayers for Qgis (python 3 & SQL)
+
+## Important
+* Number of projects to be accepted is based on mentor availability
+* Review the [timeline](https://summerofcode.withgoogle.com/how-it-works/#timeline)
+* Regardless of the product, in order for the mentors to consider the proposal, 
+the [pgrouting application requirements](#pgrouting-application-requirements) must be finished and well documented inside the proposal.
+  * Help for finishing these tasks will be provided by a mentor starting from February 6 up to March 20 on Saturdays at 15:00 UTC in [gitter](https://gitter.im/pgRouting/pgrouting)
+  * It is not forbidden that you guide each other
+  * It is forbidden copy/paste from each other's proposal.
+  * It is forbidden copy/paste from a past year proposal.
+
+
+# Summary of Ideas
+
+To give you an idea about possible pgRouting GSoC **ideas** that can be worked:
+
+| # | Title | Description
+|---|-----|-----|
+|1|Add functionality to pgRoutingLayer plugin |[Design & implement](#details-of-idea-1)
+|2|GRAPH C++ Boost graph algorithms |[Set up the algorithms to be used with pgRouting](#details-of-idea-2)
+|3|VRP functionality with VROOM on the database | [Set up the VROOM code & use it on a function](#details-of-idea-3)
+|4|Test driven code improvement on current VRP functions | [Prepare the pgtap tests & improve existing code](#details-of-idea-4)
+
+
+
+**Other ideas?** We are always interested in other ideas that potential students want to present. So please don't be shy, contact the pgrouting-dev mailing list and introduce yourself and your idea.
+
+
+
+
+## Completed in prior years
+See a list of projects on [pgRouting's Google Summer of Code site](https://github.com/pgRouting/pgrouting/wiki/Google-Summer-of-Code).
+
+## How to get started
+If you're interested, you you should introduce yourself and your project idea on the [pgRouting Developer mailing list](http://lists.osgeo.org/mailman/listinfo/pgrouting-dev). Read our wiki pages for developers and debugging and ask for [help](https://gitter.im/pgRouting/pgrouting) if you get stuck.
+
+# pgRouting application requirements
+
+## Task 1: Intent of application
+
+* Open an issue on [GSoC-pgRouting](https://github.com/pgRouting/GSoC-pgRouting) repository
+Put the following Content inside the Issue:
+```
+- [ ] Intent of application 
+- [ ] Experience with GitHub & Git
+- [ ] Build locally pgRouting
+- [ ] Get familiar with C++
+- [ ] Get familiar with pgRouting
+```
+
+
+## Task 2: Experience with GitHub & Git
+Content of Issue:
+```
+- [ ] Fork the [GSoC-pgRouting](https://github.com/pgRouting/GSoC-pgRouting) repository
+- [ ] activate issues in your fork
+- [ ] open an issue in your fork and put this content on the issue
+- [ ] Clone your fork repository in your computer
+- [ ] Create remote named `upstream` pointing to https://github.com/pgRouting/GSoC-pgRouting
+- [ ] checkout to the `develop` branch of `upstream`
+- [ ] create new branch with name `<your-git-nick>-test`
+- [ ] Edit `doc/src/pgRouting-introduction.rst` and put your name on contributor
+- [ ] push the newly created branch with the change 
+- [ ] Create a pull request to https://github.com/pgRouting/GSoC-pgRouting
+- [ ] put link of the PR and of the issue on a comment on the issue you created on [GSoC-pgRouting](https://github.com/pgRouting/GSoC-pgRouting) repository
+```
+Note: The pull request will not be honored, it is just for testing your skills using git/github
+
+## Task 3: Build locally pgRouting
+
+Create a new issue on your fork with the following content
+```
+- [ ] Install requirements
+  * Look in the documentation what are the requirements
+- [ ] Copy/Paste in a comment of this issue the compilation
+- [ ] Put the link of this issue on a comment of the issue of task 1
+```
+
+#### task 4: Get familiar with C++
+Create a new issue on your fork with the following content:
+```
+- [ ] https://www.youtube.com/watch?v=eidEEmGLQcU
+  - [ ] Make Report
+- [ ] https://www.youtube.com/watch?v=u5senBJUkPc
+  - [ ] Make Report
+- [ ] https://www.youtube.com/watch?v=YnWhqhNdYyk
+  - [ ] Make Report
+- [ ] https://www.youtube.com/watch?v=1OEu9C51K2A
+  - [ ] Make Report
+- [ ] https://www.youtube.com/watch?v=xnqTKD8uD64
+  - [ ] Make Report
+- [ ] https://www.youtube.com/watch?v=86xWVb4XIyE
+  - [ ] Make Report
+- [ ] Put the link of this issue on a comment of the issue of task 1
+```
+View the videos and make a:
+- one page
+- hand written
+report of each one, Take a picture and add the picture of the report in a comment
+
+## task 5:  Get familiar with pgRouting
+Create a new issue on your fork with the following content
+```
+- [ ] Follow the [workshop](https://workshop.pgrouting.org/2.6/en/index.html) up to chapter 8
+- [ ] Use OSGeoLive or your own computer
+- [ ] Instead of `city_routing` use `<your-git-nick>-routing`
+- [ ] Make a 3 screenshots of your work, make sure that `<your-git-nick>-routing` is visible
+- [ ] Put the link of this issue on a comment of the issue of task 1
+```
+
+## Adding a section to your proposal
+The section must contain the links to the 5 issues and to the pull request
+
+# Details of Ideas
+* [Details of idea 1](#details-of-idea-1)
+* [Details of idea 2](#details-of-idea-2)
+* [Details of idea 3](#details-of-idea-3)
+* [Details of idea 4](#details-of-idea-4)
+
+
+## Details of idea 1
+**Add functionality ot the pgRoutingLayer**
+
+Currently there are only this [supported functions](https://github.com/pgRouting/pgRoutingLayer/blob/master/pgRoutingLayer.py#L53)
+
+The [latest documentation](https://docs.pgrouting.org/latest/en/index.html) has many more functions that can be added to the pgRoutingLayer plugin.
+
+Many of the functions work in a similar way. For example the `pgr_fooCost` work similarly
+
+In your proposal:
+* You will determine at least 3 similar functions that are not yet implemented on pgRoutingLayer.
+* Include reasons of why you think the functions are similar.
+* The details of the idea will be in the form of Proposed User's Documentation.
+
+### Notes:
+From this [list](https://github.com/pgRouting/pgrouting/blob/develop/sql/sigs/pgrouting--3.2.sig) of installed functions ignore the ones that start with `_` those are internal functions and are not API to the user of pgRouting.
+
+Consider that at the expected products at the end of GSoC are:
+
+- Self Documented Code
+- User's Documentation
+- Comments on code when needed
+
+Languages needed for this idea: python3, SQL
+
+## Details of idea 2
+From [Boost Graph 1.56](http://www.boost.org/doc/libs/1_56_0/libs/graph/doc/table_of_contents.html) which in 3.2 will be our official minimum version. On section 22 (Algorithms) There is a list of algorithms from where:
+* Sparse Matrix Ordering Algorithms 
+* Graph Metrics 
+* and many more sections
+Have algorithms not yet implemented on pgRouting
+
+
+For the proposal choose **One Algorithm** that is not yet implemented on pgRouting
+The proposal must include:
+- All requirements from GSoC
+- All requirements from OSGeo
+- The details of the algorithm need to have
+  - Section: Testing data
+  - Section: Proposed Documentation
+
+
+Consider that at the expected products at the end of GSoC are:
+- Self Documented Code
+- User's Documentation
+- Simple pgtap tests
+
+### Section: testing data
+The section must have the following statements
+- Link to the Boost example
+- CREATE
+- INSERT
+- SELECT 
+- A drawing representing the created graph (can me hand made as Graphs do not have geometries)
+
+That will allow mentors to test data
+
+### Section: Proposed Documentation
+
+Try to make it look like a pgRouting function documentation
+
+### Notes
+Normally the Boost algorithms come with an example, base your proposal on that example's graph
+Example:
+[From](https://www.boost.org/doc/libs/1_56_0/libs/graph/example/king_ordering.cpp)
+You would need to `CREATE TABLE foo ...` and `INSERT INTO foo ...` a PostgreSQL/pgRouting representation of the [graph](https://www.boost.org/doc/libs/1_56_0/libs/graph/example/king_ordering.cpp) in the example (remember that on C/C++ counting start from 0, but on PostgreSQL counting start from 1)
+```
+      Pair edges[14] = { Pair(0,3), //a-d    in PostgreSQL -> (1,4)
+                     Pair(0,5),  //a-f
+                     Pair(1,2),  //b-c
+...
+                     Pair(5,7),  //f-h
+                     Pair(6,7) }; //g-h 
+```
+
+Then test that the query can be executed and give a result with `pgr_dijkstra`:
+```
+SELECT * FROM pgr_dijkstra('SELECT * FROM foo', 1, 7);
+``` 
+.
+
+## Details of idea 3
+**VRP functionality with VROOM on the database**
+
+[VROMM](https://github.com/VROOM-Project/vroom/) is a "well known" project for VRP problem
+The use of the heuristics used by VROOM using data from the database is of great interest.
+
+In your proposal:
+* You will use VROOM terminology and port it into a function design in the [vrpRouting](https://github.com/pgRouting/vrprouting) extension
+* The details of the idea will be in the form of Proposed User's Documentation.
+* Be clear of the limits of the proposal.
+* To make your pgtap tests use a 5 pick & deliver set of orders from the [li & lim](https://www.sintef.no/projectweb/top/pdptw/li-lim-benchmark/) benchmark tests. Get the smallest test lc101.txt port the [information](https://www.sintef.no/projectweb/top/pdptw/li-lim-benchmark/documentation/) to a suitable graph. You can use a graph tool of your preference to plot the nodes, their position and join with a line the pickup with the delivery. 
+
+### Notes:
+From this [list](https://github.com/pgRouting/vrprouting/blob/main/sql/sigs/vrprouting--0.0.sig) of installed functions ignore the ones that start with `_` those are internal functions and are not API to the user of pgRouting.
+
+Consider that at the expected products at the end of GSoC are:
+
+- Self Documented Code (SQL, C, C++)
+- User's Documentation
+- Comments on code when needed
+
+Languages needed for this idea: C/C++/SQL
+
+## Details of idea 4
+**Test driven code improvement on current VRP functions**
+
+In your proposal:
+* You will use VROOM terminology and port it into a test driven function design in the [vrpRouting](https://github.com/pgRouting/vrprouting) extension.
+* The focus will be to improve `vrp_pgr_pickDeliver` function, with a different name & parameters names & types using VROOM terminology
+* The details of the idea will be in the form of Proposed User's Documentation.
+* A first stage is to create the pgtap tests that will drive the SQL code functionality, and the fixes on the existing base code that will make the tests pass
+* Consider
+  * [date/time](https://www.postgresql.org/docs/13/datatype-datetime.html) types as part of your design.
+  * To make your pgtap tests use a 5 pick & deliver set of orders from the [li & lim](https://www.sintef.no/projectweb/top/pdptw/li-lim-benchmark/) benchmark tests. Get the smallest test lc101.txt port the [information](https://www.sintef.no/projectweb/top/pdptw/li-lim-benchmark/documentation/) to a suitable graph. You can use a graph tool of your preference to plot the nodes, their position and join with a line the pickup with the delivery. 
+
+
+
+### Notes:
+From this [list](https://github.com/pgRouting/vrprouting/blob/main/sql/sigs/vrprouting--0.0.sig) of installed functions ignore the ones that start with `_` those are internal functions and are not API to the user of pgRouting.
+
+Consider that at the expected products at the end of GSoC are:
+
+- pgtap tests that will drive the development of the code
+- Self Documented Code (SQL, C, C++)
+- User's Documentation
+- Comments on code when needed
+
+Languages needed for this idea: C/C++/SQL
